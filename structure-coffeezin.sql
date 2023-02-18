@@ -32,16 +32,6 @@ CREATE TABLE `client` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `client`
---
-
-LOCK TABLES `client` WRITE;
-/*!40000 ALTER TABLE `client` DISABLE KEYS */;
-INSERT INTO `client` VALUES (1,'gasantillo7@gmail.com','2023-02-17 18:47:57'),(2,'natalia_br@hotmail.com','2023-02-17 18:51:02'),(3,'gabriel@myspringintercambio.com','2023-02-16 18:51:14'),(4,'natalia@myspringintercambio.com','2023-02-17 18:51:29');
-/*!40000 ALTER TABLE `client` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Dumping routines for database 'coffeezin'
 --
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
@@ -100,4 +90,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-17 20:07:17
+-- Dump completed on 2023-02-17 20:07:52
