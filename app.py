@@ -1,5 +1,6 @@
 from flask import Flask
 from dbcreds import production_mode
+import endpoints.client
 from flask_cors import CORS
 
 app = Flask(__name__)
