@@ -17,3 +17,29 @@ def check_data_sent(sent_data, original_data, expected_data):
             original_data[data] = sent_data[data]
     return original_data
 
+
+def organize_client_response(response):
+    organized_list = []
+    dates = []
+
+    for data in response:
+        date = ""
+        for i in range(0, 10):
+            date += data['created_at'][i]
+
+        if (date in dates):
+            new_client = {
+                'email': data['email']
+            }
+            client['clients'].append(new_client)
+        else:
+            dates.append(date)
+
+            client = {
+                'date': date,
+                'clients': [{
+                    'email': data['email']
+                }]
+            }
+            organized_list.append(client)
+    return organized_list
