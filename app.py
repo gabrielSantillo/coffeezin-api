@@ -18,7 +18,7 @@ def get_client():
 if (production_mode):
     print("Running in Production Mode")
     import bjoern  # type: ignore
-    bjoern.run(app, "0.0.0.0", 5095) # port 5095 it is not being used
+    bjoern.run(app, "0.0.0.0", 5105) # port 5105 it is not being used
 else:
     from flask_cors import CORS
     CORS(app)
